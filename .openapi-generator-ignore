@@ -21,3 +21,14 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+
+pyproject.toml
+setup.py
+README.md
+.gitignore
+Makefile
+LICENSE
+generate_sdk.py
+test_sdk.py
+.github/workflows/python.yml
+.openapi-generator-ignore

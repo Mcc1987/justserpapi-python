@@ -16,7 +16,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
 from pydantic import Field, StrictBool, StrictInt, StrictStr
-from typing import Optional
+from typing import Any, Dict, Optional
 from typing_extensions import Annotated
 
 from justserpapi.api_client import ApiClient, RequestSerialized
@@ -58,7 +58,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google AI Mode API
 
         Access Google's AI-powered search mode with our specialized API. Get structured AI overviews and conversational search results with high speed and reliability.
@@ -114,6 +114,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -147,7 +148,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google AI Mode API
 
         Access Google's AI-powered search mode with our specialized API. Get structured AI overviews and conversational search results with high speed and reliability.
@@ -203,6 +204,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -292,6 +294,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -407,7 +410,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google AI Overview API
 
         Scrape Google's AI-generated search overviews with our Google AI Overview API. Get structured insights and summaries directly from Google's generative search experience.
@@ -448,6 +451,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -476,7 +480,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google AI Overview API
 
         Scrape Google's AI-generated search overviews with our Google AI Overview API. Get structured insights and summaries directly from Google's generative search experience.
@@ -517,6 +521,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -586,6 +591,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -678,7 +684,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Autocomplete API
 
         Powerful Google Autocomplete API to fetch real-time search suggestions. Ideal for keyword discovery, SEO optimization, and improving user search experience.
@@ -725,6 +731,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -755,7 +762,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Autocomplete API
 
         Powerful Google Autocomplete API to fetch real-time search suggestions. Ideal for keyword discovery, SEO optimization, and improving user search experience.
@@ -802,6 +809,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -879,6 +887,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -981,7 +990,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Finance Search API
 
         Scrape real-time stock market data, financial news, and currency exchange rates with our Google Finance Search SERP API. Get structured financial information directly from Google Finance with high reliability.
@@ -1028,6 +1037,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1058,7 +1068,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Finance Search API
 
         Scrape real-time stock market data, financial news, and currency exchange rates with our Google Finance Search SERP API. Get structured financial information directly from Google Finance with high reliability.
@@ -1105,6 +1115,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1182,6 +1193,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1307,7 +1319,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Hotels Search API
 
         Scrape hotel listings, prices, ratings, and availability with our Google Hotels Search API. Get structured travel data for competitive analysis and booking insights.
@@ -1423,6 +1435,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1476,7 +1489,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Hotels Search API
 
         Scrape hotel listings, prices, ratings, and availability with our Google Hotels Search API. Get structured travel data for competitive analysis and booking insights.
@@ -1592,6 +1605,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1761,6 +1775,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -1998,7 +2013,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Images Search API
 
         Scrape high-resolution images and metadata from Google Images. Our API supports advanced filters like image size, color, type, and usage rights for precise visual data extraction.
@@ -2105,6 +2120,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2155,7 +2171,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Images Search API
 
         Scrape high-resolution images and metadata from Google Images. Our API supports advanced filters like image size, color, type, and usage rights for precise visual data extraction.
@@ -2262,6 +2278,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2419,6 +2436,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2623,7 +2641,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Immersive Product API
 
         Access rich product data and immersive shopping results from Google. Scrape detailed product features, 3D views (where available), and pricing information.
@@ -2676,6 +2694,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2708,7 +2727,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Immersive Product API
 
         Access rich product data and immersive shopping results from Google. Scrape detailed product features, 3D views (where available), and pricing information.
@@ -2761,6 +2780,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2846,6 +2866,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -2964,7 +2985,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Jobs Search API
 
         Scrape real-time job listings from Google Jobs with our specialized API. Extract structured data including job titles, descriptions, companies, and locations for HR tech and recruitment apps.
@@ -3029,6 +3050,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3065,7 +3087,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Jobs Search API
 
         Scrape real-time job listings from Google Jobs with our specialized API. Extract structured data including job titles, descriptions, companies, and locations for HR tech and recruitment apps.
@@ -3130,6 +3152,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3231,6 +3254,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3366,7 +3390,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Lens API
 
         Extract visual search results and product information using our Google Lens API. Scrape image-based search data, including identified objects and related web links.
@@ -3422,6 +3446,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3455,7 +3480,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Lens API
 
         Extract visual search results and product information using our Google Lens API. Scrape image-based search data, including identified objects and related web links.
@@ -3511,6 +3536,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3600,6 +3626,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3723,7 +3750,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Local Search API
 
         Scrape local business listings and map results with our Google Local Search API. Get structured data including addresses, phone numbers, and ratings for businesses in any location.
@@ -3788,6 +3815,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3824,7 +3852,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Local Search API
 
         Scrape local business listings and map results with our Google Local Search API. Get structured data including addresses, phone numbers, and ratings for businesses in any location.
@@ -3889,6 +3917,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -3990,6 +4019,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4123,7 +4153,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Maps Photos API
 
         Extract high-quality photos from Google Maps locations with our Google Maps Photos API. Scrape image URLs and metadata for business listings and points of interest.
@@ -4173,6 +4203,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4204,7 +4235,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Maps Photos API
 
         Extract high-quality photos from Google Maps locations with our Google Maps Photos API. Scrape image URLs and metadata for business listings and points of interest.
@@ -4254,6 +4285,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4335,6 +4367,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4442,7 +4475,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Maps Places API
 
         Get comprehensive details about specific locations using the Google Maps Places API. Scrape contact info, business hours, coordinates, and more from Google Maps.
@@ -4489,6 +4522,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4519,7 +4553,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Maps Places API
 
         Get comprehensive details about specific locations using the Google Maps Places API. Scrape contact info, business hours, coordinates, and more from Google Maps.
@@ -4566,6 +4600,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4643,6 +4678,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4744,7 +4780,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Maps Posts API
 
         Scrape business updates and posts from Google Maps. Use our Google Maps Posts API to keep track of local business announcements and promotional content.
@@ -4788,6 +4824,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4817,7 +4854,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Maps Posts API
 
         Scrape business updates and posts from Google Maps. Use our Google Maps Posts API to keep track of local business announcements and promotional content.
@@ -4861,6 +4898,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -4934,6 +4972,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5034,7 +5073,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Maps Reviews API
 
         Extract user reviews and ratings from Google Maps with our Google Maps Reviews API. Get structured data for sentiment analysis and brand reputation management.
@@ -5090,6 +5129,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5123,7 +5163,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Maps Reviews API
 
         Extract user reviews and ratings from Google Maps with our Google Maps Reviews API. Get structured data for sentiment analysis and brand reputation management.
@@ -5179,6 +5219,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5268,6 +5309,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5390,7 +5432,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Maps Search API
 
         Powerful Google Maps SERP API to scrape business listings and local search results. Perfect for lead generation and local SEO tracking with precise coordinate support.
@@ -5452,6 +5494,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5487,7 +5530,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Maps Search API
 
         Powerful Google Maps SERP API to scrape business listings and local search results. Perfect for lead generation and local SEO tracking with precise coordinate support.
@@ -5549,6 +5592,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5646,6 +5690,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5777,7 +5822,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google News Search API
 
         Get real-time news headlines and stories with our Google News Search API. Scrape structured data from Google News, including source info, publication dates, and related topics.
@@ -5836,6 +5881,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -5870,7 +5916,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google News Search API
 
         Get real-time news headlines and stories with our Google News Search API. Scrape structured data from Google News, including source info, publication dates, and related topics.
@@ -5929,6 +5975,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6022,6 +6069,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6144,7 +6192,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Patents Details API
 
         Get comprehensive patent information with our Google Patents Details API. Extract structured data including patent abstracts, claims, descriptions, and legal statuses.
@@ -6191,6 +6239,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6221,7 +6270,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Patents Details API
 
         Get comprehensive patent information with our Google Patents Details API. Extract structured data including patent abstracts, claims, descriptions, and legal statuses.
@@ -6268,6 +6317,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6345,6 +6395,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6461,7 +6512,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Patents Search API
 
         Powerful Google Patents SERP API to search and scrape patent documents. Filter results by inventor, assignee, date, and status for detailed intellectual property research.
@@ -6550,6 +6601,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6594,7 +6646,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Patents Search API
 
         Powerful Google Patents SERP API to search and scrape patent documents. Filter results by inventor, assignee, date, and status for detailed intellectual property research.
@@ -6683,6 +6735,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6816,6 +6869,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -6991,7 +7045,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Scholar Author API
 
         Scrape Google Scholar author profiles to get comprehensive lists of publications, citations, and research interests. Structured data for academic research and talent discovery.
@@ -7047,6 +7101,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7080,7 +7135,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Scholar Author API
 
         Scrape Google Scholar author profiles to get comprehensive lists of publications, citations, and research interests. Structured data for academic research and talent discovery.
@@ -7136,6 +7191,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7225,6 +7281,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7341,7 +7398,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Scholar Cite Search API
 
         Retrieve citation information for specific academic papers and articles. This API provides structured bibtex and citation formats directly from Google Scholar.
@@ -7385,6 +7442,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7414,7 +7472,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Scholar Cite Search API
 
         Retrieve citation information for specific academic papers and articles. This API provides structured bibtex and citation formats directly from Google Scholar.
@@ -7458,6 +7516,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7531,6 +7590,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7628,7 +7688,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Scholar Profiles API
 
         Search and extract data from Google Scholar user profiles. Get real-time access to researcher information, h-index, and publication history.
@@ -7675,6 +7735,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7705,7 +7766,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Scholar Profiles API
 
         Search and extract data from Google Scholar user profiles. Get real-time access to researcher information, h-index, and publication history.
@@ -7752,6 +7813,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7829,6 +7891,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -7944,7 +8007,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Scholar Search API
 
         Comprehensive Google Scholar SERP API to scrape academic papers, patents, and legal documents. Filter by date, relevance, and citation count for precise research data.
@@ -8030,6 +8093,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -8073,7 +8137,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Scholar Search API
 
         Comprehensive Google Scholar SERP API to scrape academic papers, patents, and legal documents. Filter by date, relevance, and citation count for precise research data.
@@ -8159,6 +8223,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -8288,6 +8353,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -8472,7 +8538,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Search API
 
         Powerful Google Search SERP API to scrape organic search results, ads, knowledge panels, and more. Get real-time, structured data from Google Search with global location support and proxy rotation.
@@ -8570,6 +8636,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -8617,7 +8684,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Search API
 
         Powerful Google Search SERP API to scrape organic search results, ads, knowledge panels, and more. Get real-time, structured data from Google Search with global location support and proxy rotation.
@@ -8715,6 +8782,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -8860,6 +8928,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -9064,7 +9133,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Light Search API
 
         A fast and lightweight Google Search API designed for high-speed retrieval of essential SERP data. Ideal for applications that need quick organic results with minimal overhead.
@@ -9162,6 +9231,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -9209,7 +9279,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Light Search API
 
         A fast and lightweight Google Search API designed for high-speed retrieval of essential SERP data. Ideal for applications that need quick organic results with minimal overhead.
@@ -9307,6 +9377,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -9452,6 +9523,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -9656,7 +9728,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Mobile Search API
 
         Scrape mobile-optimized Google search results with our Mobile SERP API. Simulates real mobile devices to provide accurate mobile rankings, features, and layouts for SEO tracking.
@@ -9754,6 +9826,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -9801,7 +9874,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Mobile Search API
 
         Scrape mobile-optimized Google search results with our Mobile SERP API. Simulates real mobile devices to provide accurate mobile rankings, features, and layouts for SEO tracking.
@@ -9899,6 +9972,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10044,6 +10118,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10240,7 +10315,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Shopping Search API
 
         Scrape real-time product listings and prices from Google Shopping. Use our API to get structured shopping data, including merchant info, ratings, and product comparisons.
@@ -10314,6 +10389,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10353,7 +10429,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Shopping Search API
 
         Scrape real-time product listings and prices from Google Shopping. Use our API to get structured shopping data, including merchant info, ratings, and product comparisons.
@@ -10427,6 +10503,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10540,6 +10617,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10695,7 +10773,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Shorts Search API
 
         Access trending and relevant Google Shorts content with our specialized search API. Scrape video details, rankings, and metadata from Google's short-form video platform.
@@ -10766,6 +10844,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10804,7 +10883,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Shorts Search API
 
         Access trending and relevant Google Shorts content with our specialized search API. Scrape video details, rankings, and metadata from Google's short-form video platform.
@@ -10875,6 +10954,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -10984,6 +11064,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11125,7 +11206,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Trends Autocomplete API
 
         Access real-time search suggestions and trending keywords with the Google Trends Autocomplete API. Enhance keyword research and discover emerging search patterns.
@@ -11169,6 +11250,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11198,7 +11280,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Trends Autocomplete API
 
         Access real-time search suggestions and trending keywords with the Google Trends Autocomplete API. Enhance keyword research and discover emerging search patterns.
@@ -11242,6 +11324,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11315,6 +11398,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11418,7 +11502,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Trends Search API
 
         Scrape detailed search interest data, regional trends, and related queries from Google Trends. Perfect for market research, SEO analysis, and tracking topic popularity.
@@ -11483,6 +11567,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11519,7 +11604,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Trends Search API
 
         Scrape detailed search interest data, regional trends, and related queries from Google Trends. Perfect for market research, SEO analysis, and tracking topic popularity.
@@ -11584,6 +11669,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11685,6 +11771,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11817,7 +11904,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Trends Trending Now API
 
         Retrieve the latest trending topics and daily search trends across different regions. Stay updated with what's hot on Google in real-time.
@@ -11864,6 +11951,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -11894,7 +11982,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Trends Trending Now API
 
         Retrieve the latest trending topics and daily search trends across different regions. Stay updated with what's hot on Google in real-time.
@@ -11941,6 +12029,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -12018,6 +12107,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -12129,7 +12219,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> None:
+    ) -> object:
         """Google Videos Search API
 
         Scrape video search results from Google with our Google Videos Search API. Get structured data for video titles, descriptions, source platforms, and publication dates.
@@ -12203,6 +12293,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -12242,7 +12333,7 @@ class GoogleAPIApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[None]:
+    ) -> ApiResponse[object]:
         """Google Videos Search API
 
         Scrape video search results from Google with our Google Videos Search API. Get structured data for video titles, descriptions, source platforms, and publication dates.
@@ -12316,6 +12407,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,
@@ -12429,6 +12521,7 @@ class GoogleAPIApi:
             '401': None,
             '403': None,
             '500': None,
+            '200': "object",
         }
         response_data = self.api_client.call_api(
             *_param,

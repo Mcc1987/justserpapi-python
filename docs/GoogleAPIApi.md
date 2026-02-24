@@ -38,7 +38,7 @@ Method | HTTP request | Description
 
 
 # **ai_mode**
-> ai_mode(query, html=html, country=country, uule=uule, location=location, safe=safe)
+> object ai_mode(query, html=html, country=country, uule=uule, location=location, safe=safe)
 
 Google AI Mode API
 
@@ -83,7 +83,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google AI Mode API
-        api_instance.ai_mode(query, html=html, country=country, uule=uule, location=location, safe=safe)
+        api_response = api_instance.ai_mode(query, html=html, country=country, uule=uule, location=location, safe=safe)
+        print("The response of GoogleAPIApi->ai_mode:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->ai_mode: %s\n" % e)
 ```
@@ -104,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -122,12 +124,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **ai_overview**
-> ai_overview(url)
+> object ai_overview(url)
 
 Google AI Overview API
 
@@ -167,7 +169,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google AI Overview API
-        api_instance.ai_overview(url)
+        api_response = api_instance.ai_overview(url)
+        print("The response of GoogleAPIApi->ai_overview:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->ai_overview: %s\n" % e)
 ```
@@ -183,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -201,12 +205,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **autocomplete**
-> autocomplete(query, country=country, language=language)
+> object autocomplete(query, country=country, language=language)
 
 Google Autocomplete API
 
@@ -248,7 +252,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Autocomplete API
-        api_instance.autocomplete(query, country=country, language=language)
+        api_response = api_instance.autocomplete(query, country=country, language=language)
+        print("The response of GoogleAPIApi->autocomplete:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->autocomplete: %s\n" % e)
 ```
@@ -266,7 +272,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -284,12 +290,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **finance_search**
-> finance_search(query, html=html, language=language)
+> object finance_search(query, html=html, language=language)
 
 Google Finance Search API
 
@@ -331,7 +337,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Finance Search API
-        api_instance.finance_search(query, html=html, language=language)
+        api_response = api_instance.finance_search(query, html=html, language=language)
+        print("The response of GoogleAPIApi->finance_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->finance_search: %s\n" % e)
 ```
@@ -349,7 +357,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -367,12 +375,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **hotels_search**
-> hotels_search(query, check_in_date, check_out_date, next_page_token=next_page_token, adults=adults, children=children, children_ages=children_ages, html=html, language=language, country=country, currency=currency, sort_by=sort_by, min_price=min_price, max_price=max_price, property_types=property_types, amenities=amenities, rating=rating, brands=brands, hotel_class=hotel_class, free_cancellation=free_cancellation, special_offers=special_offers, eco_certified=eco_certified, vacation_rentals=vacation_rentals, bedrooms=bedrooms, bathrooms=bathrooms, property_token=property_token)
+> object hotels_search(query, check_in_date, check_out_date, next_page_token=next_page_token, adults=adults, children=children, children_ages=children_ages, html=html, language=language, country=country, currency=currency, sort_by=sort_by, min_price=min_price, max_price=max_price, property_types=property_types, amenities=amenities, rating=rating, brands=brands, hotel_class=hotel_class, free_cancellation=free_cancellation, special_offers=special_offers, eco_certified=eco_certified, vacation_rentals=vacation_rentals, bedrooms=bedrooms, bathrooms=bathrooms, property_token=property_token)
 
 Google Hotels Search API
 
@@ -437,7 +445,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Hotels Search API
-        api_instance.hotels_search(query, check_in_date, check_out_date, next_page_token=next_page_token, adults=adults, children=children, children_ages=children_ages, html=html, language=language, country=country, currency=currency, sort_by=sort_by, min_price=min_price, max_price=max_price, property_types=property_types, amenities=amenities, rating=rating, brands=brands, hotel_class=hotel_class, free_cancellation=free_cancellation, special_offers=special_offers, eco_certified=eco_certified, vacation_rentals=vacation_rentals, bedrooms=bedrooms, bathrooms=bathrooms, property_token=property_token)
+        api_response = api_instance.hotels_search(query, check_in_date, check_out_date, next_page_token=next_page_token, adults=adults, children=children, children_ages=children_ages, html=html, language=language, country=country, currency=currency, sort_by=sort_by, min_price=min_price, max_price=max_price, property_types=property_types, amenities=amenities, rating=rating, brands=brands, hotel_class=hotel_class, free_cancellation=free_cancellation, special_offers=special_offers, eco_certified=eco_certified, vacation_rentals=vacation_rentals, bedrooms=bedrooms, bathrooms=bathrooms, property_token=property_token)
+        print("The response of GoogleAPIApi->hotels_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->hotels_search: %s\n" % e)
 ```
@@ -478,7 +488,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -496,12 +506,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **images_search**
-> images_search(query, html=html, page=page, domain=domain, country=country, cr=cr, language=language, lr=lr, uule=uule, period_unit=period_unit, period_value=period_value, start_date=start_date, end_date=end_date, chips=chips, tbs=tbs, imgar=imgar, imgsz=imgsz, image_color=image_color, image_type=image_type, licenses=licenses, safe=safe, nfpr=nfpr, filter=filter)
+> object images_search(query, html=html, page=page, domain=domain, country=country, cr=cr, language=language, lr=lr, uule=uule, period_unit=period_unit, period_value=period_value, start_date=start_date, end_date=end_date, chips=chips, tbs=tbs, imgar=imgar, imgsz=imgsz, image_color=image_color, image_type=image_type, licenses=licenses, safe=safe, nfpr=nfpr, filter=filter)
 
 Google Images Search API
 
@@ -563,7 +573,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Images Search API
-        api_instance.images_search(query, html=html, page=page, domain=domain, country=country, cr=cr, language=language, lr=lr, uule=uule, period_unit=period_unit, period_value=period_value, start_date=start_date, end_date=end_date, chips=chips, tbs=tbs, imgar=imgar, imgsz=imgsz, image_color=image_color, image_type=image_type, licenses=licenses, safe=safe, nfpr=nfpr, filter=filter)
+        api_response = api_instance.images_search(query, html=html, page=page, domain=domain, country=country, cr=cr, language=language, lr=lr, uule=uule, period_unit=period_unit, period_value=period_value, start_date=start_date, end_date=end_date, chips=chips, tbs=tbs, imgar=imgar, imgsz=imgsz, image_color=image_color, image_type=image_type, licenses=licenses, safe=safe, nfpr=nfpr, filter=filter)
+        print("The response of GoogleAPIApi->images_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->images_search: %s\n" % e)
 ```
@@ -601,7 +613,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -619,12 +631,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **immersive_product**
-> immersive_product(page_token, stores=stores, sori=sori, country=country, language=language)
+> object immersive_product(page_token, stores=stores, sori=sori, country=country, language=language)
 
 Google Immersive Product API
 
@@ -668,7 +680,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Immersive Product API
-        api_instance.immersive_product(page_token, stores=stores, sori=sori, country=country, language=language)
+        api_response = api_instance.immersive_product(page_token, stores=stores, sori=sori, country=country, language=language)
+        print("The response of GoogleAPIApi->immersive_product:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->immersive_product: %s\n" % e)
 ```
@@ -688,7 +702,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -706,12 +720,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **jobs_search**
-> jobs_search(query, country=country, language=language, next_page_token=next_page_token, chips=chips, lrad=lrad, ltype=ltype, uds=uds, uule=uule)
+> object jobs_search(query, country=country, language=language, next_page_token=next_page_token, chips=chips, lrad=lrad, ltype=ltype, uds=uds, uule=uule)
 
 Google Jobs Search API
 
@@ -759,7 +773,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Jobs Search API
-        api_instance.jobs_search(query, country=country, language=language, next_page_token=next_page_token, chips=chips, lrad=lrad, ltype=ltype, uds=uds, uule=uule)
+        api_response = api_instance.jobs_search(query, country=country, language=language, next_page_token=next_page_token, chips=chips, lrad=lrad, ltype=ltype, uds=uds, uule=uule)
+        print("The response of GoogleAPIApi->jobs_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->jobs_search: %s\n" % e)
 ```
@@ -783,7 +799,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -801,12 +817,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **lens**
-> lens(url, country=country, language=language, product=product, visual_matches=visual_matches, exact_matches=exact_matches)
+> object lens(url, country=country, language=language, product=product, visual_matches=visual_matches, exact_matches=exact_matches)
 
 Google Lens API
 
@@ -851,7 +867,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Lens API
-        api_instance.lens(url, country=country, language=language, product=product, visual_matches=visual_matches, exact_matches=exact_matches)
+        api_response = api_instance.lens(url, country=country, language=language, product=product, visual_matches=visual_matches, exact_matches=exact_matches)
+        print("The response of GoogleAPIApi->lens:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->lens: %s\n" % e)
 ```
@@ -872,7 +890,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -890,12 +908,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **local_search**
-> local_search(query, page=page, location=location, uule=uule, country=country, language=language, domain=domain, ludocid=ludocid, tbs=tbs)
+> object local_search(query, page=page, location=location, uule=uule, country=country, language=language, domain=domain, ludocid=ludocid, tbs=tbs)
 
 Google Local Search API
 
@@ -943,7 +961,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Local Search API
-        api_instance.local_search(query, page=page, location=location, uule=uule, country=country, language=language, domain=domain, ludocid=ludocid, tbs=tbs)
+        api_response = api_instance.local_search(query, page=page, location=location, uule=uule, country=country, language=language, domain=domain, ludocid=ludocid, tbs=tbs)
+        print("The response of GoogleAPIApi->local_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->local_search: %s\n" % e)
 ```
@@ -967,7 +987,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -985,12 +1005,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **maps_photos**
-> maps_photos(data_id, language=language, category_id=category_id, next_page_token=next_page_token)
+> object maps_photos(data_id, language=language, category_id=category_id, next_page_token=next_page_token)
 
 Google Maps Photos API
 
@@ -1033,7 +1053,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Maps Photos API
-        api_instance.maps_photos(data_id, language=language, category_id=category_id, next_page_token=next_page_token)
+        api_response = api_instance.maps_photos(data_id, language=language, category_id=category_id, next_page_token=next_page_token)
+        print("The response of GoogleAPIApi->maps_photos:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->maps_photos: %s\n" % e)
 ```
@@ -1052,7 +1074,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1070,12 +1092,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **maps_places**
-> maps_places(place_id=place_id, data_id=data_id, country=country)
+> object maps_places(place_id=place_id, data_id=data_id, country=country)
 
 Google Maps Places API
 
@@ -1117,7 +1139,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Maps Places API
-        api_instance.maps_places(place_id=place_id, data_id=data_id, country=country)
+        api_response = api_instance.maps_places(place_id=place_id, data_id=data_id, country=country)
+        print("The response of GoogleAPIApi->maps_places:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->maps_places: %s\n" % e)
 ```
@@ -1135,7 +1159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1153,12 +1177,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **maps_posts**
-> maps_posts(data_id, next_page_token=next_page_token)
+> object maps_posts(data_id, next_page_token=next_page_token)
 
 Google Maps Posts API
 
@@ -1199,7 +1223,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Maps Posts API
-        api_instance.maps_posts(data_id, next_page_token=next_page_token)
+        api_response = api_instance.maps_posts(data_id, next_page_token=next_page_token)
+        print("The response of GoogleAPIApi->maps_posts:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->maps_posts: %s\n" % e)
 ```
@@ -1216,7 +1242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1234,12 +1260,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **maps_reviews**
-> maps_reviews(data_id, language=language, sort_by=sort_by, topic_id=topic_id, next_page_token=next_page_token, results=results)
+> object maps_reviews(data_id, language=language, sort_by=sort_by, topic_id=topic_id, next_page_token=next_page_token, results=results)
 
 Google Maps Reviews API
 
@@ -1284,7 +1310,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Maps Reviews API
-        api_instance.maps_reviews(data_id, language=language, sort_by=sort_by, topic_id=topic_id, next_page_token=next_page_token, results=results)
+        api_response = api_instance.maps_reviews(data_id, language=language, sort_by=sort_by, topic_id=topic_id, next_page_token=next_page_token, results=results)
+        print("The response of GoogleAPIApi->maps_reviews:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->maps_reviews: %s\n" % e)
 ```
@@ -1305,7 +1333,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1323,12 +1351,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **maps_search**
-> maps_search(query, ll=ll, domain=domain, language=language, country=country, data=data, place_id=place_id, page=page)
+> object maps_search(query, ll=ll, domain=domain, language=language, country=country, data=data, place_id=place_id, page=page)
 
 Google Maps Search API
 
@@ -1375,7 +1403,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Maps Search API
-        api_instance.maps_search(query, ll=ll, domain=domain, language=language, country=country, data=data, place_id=place_id, page=page)
+        api_response = api_instance.maps_search(query, ll=ll, domain=domain, language=language, country=country, data=data, place_id=place_id, page=page)
+        print("The response of GoogleAPIApi->maps_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->maps_search: %s\n" % e)
 ```
@@ -1398,7 +1428,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1416,12 +1446,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **news_search**
-> news_search(query, country=country, language=language, topic_token=topic_token, publication_token=publication_token, section_token=section_token, so=so)
+> object news_search(query, country=country, language=language, topic_token=topic_token, publication_token=publication_token, section_token=section_token, so=so)
 
 Google News Search API
 
@@ -1467,7 +1497,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google News Search API
-        api_instance.news_search(query, country=country, language=language, topic_token=topic_token, publication_token=publication_token, section_token=section_token, so=so)
+        api_response = api_instance.news_search(query, country=country, language=language, topic_token=topic_token, publication_token=publication_token, section_token=section_token, so=so)
+        print("The response of GoogleAPIApi->news_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->news_search: %s\n" % e)
 ```
@@ -1489,7 +1521,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1507,12 +1539,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patent_details**
-> patent_details(patent_id, language=language, html=html)
+> object patent_details(patent_id, language=language, html=html)
 
 Google Patents Details API
 
@@ -1554,7 +1586,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Patents Details API
-        api_instance.patent_details(patent_id, language=language, html=html)
+        api_response = api_instance.patent_details(patent_id, language=language, html=html)
+        print("The response of GoogleAPIApi->patent_details:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->patent_details: %s\n" % e)
 ```
@@ -1572,7 +1606,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1590,12 +1624,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **patent_search**
-> patent_search(query, page=page, num=num, sort=sort, clustered=clustered, dups=dups, patents=patents, scholar=scholar, before=before, after=after, inventor=inventor, assignee=assignee, country=country, language=language, status=status, type=type, litigation=litigation)
+> object patent_search(query, page=page, num=num, sort=sort, clustered=clustered, dups=dups, patents=patents, scholar=scholar, before=before, after=after, inventor=inventor, assignee=assignee, country=country, language=language, status=status, type=type, litigation=litigation)
 
 Google Patents Search API
 
@@ -1651,7 +1685,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Patents Search API
-        api_instance.patent_search(query, page=page, num=num, sort=sort, clustered=clustered, dups=dups, patents=patents, scholar=scholar, before=before, after=after, inventor=inventor, assignee=assignee, country=country, language=language, status=status, type=type, litigation=litigation)
+        api_response = api_instance.patent_search(query, page=page, num=num, sort=sort, clustered=clustered, dups=dups, patents=patents, scholar=scholar, before=before, after=after, inventor=inventor, assignee=assignee, country=country, language=language, status=status, type=type, litigation=litigation)
+        print("The response of GoogleAPIApi->patent_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->patent_search: %s\n" % e)
 ```
@@ -1683,7 +1719,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1701,12 +1737,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **scholar_author**
-> scholar_author(author_id, results=results, language=language, view_op=view_op, sort=sort, citation_id=citation_id)
+> object scholar_author(author_id, results=results, language=language, view_op=view_op, sort=sort, citation_id=citation_id)
 
 Google Scholar Author API
 
@@ -1751,7 +1787,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Scholar Author API
-        api_instance.scholar_author(author_id, results=results, language=language, view_op=view_op, sort=sort, citation_id=citation_id)
+        api_response = api_instance.scholar_author(author_id, results=results, language=language, view_op=view_op, sort=sort, citation_id=citation_id)
+        print("The response of GoogleAPIApi->scholar_author:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->scholar_author: %s\n" % e)
 ```
@@ -1772,7 +1810,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1790,12 +1828,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **scholar_cite_search**
-> scholar_cite_search(query, language=language)
+> object scholar_cite_search(query, language=language)
 
 Google Scholar Cite Search API
 
@@ -1836,7 +1874,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Scholar Cite Search API
-        api_instance.scholar_cite_search(query, language=language)
+        api_response = api_instance.scholar_cite_search(query, language=language)
+        print("The response of GoogleAPIApi->scholar_cite_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->scholar_cite_search: %s\n" % e)
 ```
@@ -1853,7 +1893,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1871,12 +1911,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **scholar_profiles**
-> scholar_profiles(mauthors, after_author=after_author, before_author=before_author)
+> object scholar_profiles(mauthors, after_author=after_author, before_author=before_author)
 
 Google Scholar Profiles API
 
@@ -1918,7 +1958,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Scholar Profiles API
-        api_instance.scholar_profiles(mauthors, after_author=after_author, before_author=before_author)
+        api_response = api_instance.scholar_profiles(mauthors, after_author=after_author, before_author=before_author)
+        print("The response of GoogleAPIApi->scholar_profiles:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->scholar_profiles: %s\n" % e)
 ```
@@ -1936,7 +1978,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -1954,12 +1996,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **scholar_search**
-> scholar_search(query, html=html, cites=cites, as_ylo=as_ylo, as_yhi=as_yhi, scisbd=scisbd, cluster=cluster, language=language, lr=lr, page=page, results=results, as_sdt=as_sdt, safe=safe, filter=filter, as_vis=as_vis, as_rr=as_rr)
+> object scholar_search(query, html=html, cites=cites, as_ylo=as_ylo, as_yhi=as_yhi, scisbd=scisbd, cluster=cluster, language=language, lr=lr, page=page, results=results, as_sdt=as_sdt, safe=safe, filter=filter, as_vis=as_vis, as_rr=as_rr)
 
 Google Scholar Search API
 
@@ -2014,7 +2056,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Scholar Search API
-        api_instance.scholar_search(query, html=html, cites=cites, as_ylo=as_ylo, as_yhi=as_yhi, scisbd=scisbd, cluster=cluster, language=language, lr=lr, page=page, results=results, as_sdt=as_sdt, safe=safe, filter=filter, as_vis=as_vis, as_rr=as_rr)
+        api_response = api_instance.scholar_search(query, html=html, cites=cites, as_ylo=as_ylo, as_yhi=as_yhi, scisbd=scisbd, cluster=cluster, language=language, lr=lr, page=page, results=results, as_sdt=as_sdt, safe=safe, filter=filter, as_vis=as_vis, as_rr=as_rr)
+        print("The response of GoogleAPIApi->scholar_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->scholar_search: %s\n" % e)
 ```
@@ -2045,7 +2089,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2063,12 +2107,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search**
-> search(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+> object search(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
 
 Google Search API
 
@@ -2127,7 +2171,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Search API
-        api_instance.search(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        api_response = api_instance.search(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        print("The response of GoogleAPIApi->search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->search: %s\n" % e)
 ```
@@ -2162,7 +2208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2180,12 +2226,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_light**
-> search_light(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+> object search_light(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
 
 Google Light Search API
 
@@ -2244,7 +2290,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Light Search API
-        api_instance.search_light(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        api_response = api_instance.search_light(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        print("The response of GoogleAPIApi->search_light:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->search_light: %s\n" % e)
 ```
@@ -2279,7 +2327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2297,12 +2345,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **search_mobile**
-> search_mobile(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+> object search_mobile(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
 
 Google Mobile Search API
 
@@ -2361,7 +2409,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Mobile Search API
-        api_instance.search_mobile(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        api_response = api_instance.search_mobile(query, page=page, html=html, language=language, lr=lr, domain=domain, country=country, cr=cr, uule=uule, location=location, ludocid=ludocid, lsig=lsig, kgmid=kgmid, si=si, ibp=ibp, uds=uds, tbs=tbs, safe=safe, nfpr=nfpr, filter=filter)
+        print("The response of GoogleAPIApi->search_mobile:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->search_mobile: %s\n" % e)
 ```
@@ -2396,7 +2446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2414,12 +2464,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **shopping_search**
-> shopping_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, shoprs=shoprs, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+> object shopping_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, shoprs=shoprs, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
 
 Google Shopping Search API
 
@@ -2470,7 +2520,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Shopping Search API
-        api_instance.shopping_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, shoprs=shoprs, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+        api_response = api_instance.shopping_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, shoprs=shoprs, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+        print("The response of GoogleAPIApi->shopping_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->shopping_search: %s\n" % e)
 ```
@@ -2497,7 +2549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2515,12 +2567,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **shorts_search**
-> shorts_search(query, start=start, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+> object shorts_search(query, start=start, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
 
 Google Shorts Search API
 
@@ -2570,7 +2622,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Shorts Search API
-        api_instance.shorts_search(query, start=start, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+        api_response = api_instance.shorts_search(query, start=start, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr)
+        print("The response of GoogleAPIApi->shorts_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->shorts_search: %s\n" % e)
 ```
@@ -2596,7 +2650,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2614,12 +2668,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **trends_autocomplete**
-> trends_autocomplete(query, language=language)
+> object trends_autocomplete(query, language=language)
 
 Google Trends Autocomplete API
 
@@ -2660,7 +2714,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Trends Autocomplete API
-        api_instance.trends_autocomplete(query, language=language)
+        api_response = api_instance.trends_autocomplete(query, language=language)
+        print("The response of GoogleAPIApi->trends_autocomplete:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->trends_autocomplete: %s\n" % e)
 ```
@@ -2677,7 +2733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2695,12 +2751,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **trends_search**
-> trends_search(query, language=language, geo=geo, region=region, data_type=data_type, tz=tz, cat=cat, gprop=gprop, var_date=var_date)
+> object trends_search(query, language=language, geo=geo, region=region, data_type=data_type, tz=tz, cat=cat, gprop=gprop, var_date=var_date)
 
 Google Trends Search API
 
@@ -2748,7 +2804,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Trends Search API
-        api_instance.trends_search(query, language=language, geo=geo, region=region, data_type=data_type, tz=tz, cat=cat, gprop=gprop, var_date=var_date)
+        api_response = api_instance.trends_search(query, language=language, geo=geo, region=region, data_type=data_type, tz=tz, cat=cat, gprop=gprop, var_date=var_date)
+        print("The response of GoogleAPIApi->trends_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->trends_search: %s\n" % e)
 ```
@@ -2772,7 +2830,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2790,12 +2848,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **trends_trending_now**
-> trends_trending_now(geo, hours=hours, language=language)
+> object trends_trending_now(geo, hours=hours, language=language)
 
 Google Trends Trending Now API
 
@@ -2837,7 +2895,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Trends Trending Now API
-        api_instance.trends_trending_now(geo, hours=hours, language=language)
+        api_response = api_instance.trends_trending_now(geo, hours=hours, language=language)
+        print("The response of GoogleAPIApi->trends_trending_now:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->trends_trending_now: %s\n" % e)
 ```
@@ -2855,7 +2915,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2873,12 +2933,12 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **videos_search**
-> videos_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr, result_time=result_time)
+> object videos_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr, result_time=result_time)
 
 Google Videos Search API
 
@@ -2929,7 +2989,9 @@ with justserpapi.ApiClient(configuration) as api_client:
 
     try:
         # Google Videos Search API
-        api_instance.videos_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr, result_time=result_time)
+        api_response = api_instance.videos_search(query, page=page, html=html, country=country, domain=domain, language=language, lr=lr, uule=uule, tbs=tbs, safe=safe, nfpr=nfpr, result_time=result_time)
+        print("The response of GoogleAPIApi->videos_search:\n")
+        pprint(api_response)
     except Exception as e:
         print("Exception when calling GoogleAPIApi->videos_search: %s\n" % e)
 ```
@@ -2956,7 +3018,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**object**
 
 ### Authorization
 
@@ -2974,7 +3036,7 @@ void (empty response body)
 **401** | Authentication failed: API Key is invalid or missing |  -  |
 **403** | Access denied: Insufficient credits or quota exceeded |  -  |
 **500** | Internal server error or upstream service exception |  -  |
-**0** | default response |  -  |
+**200** | default response |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
