@@ -28,6 +28,9 @@ REQUIRES = [
     "typing-extensions >= 4.7.1",
 ]
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name=NAME,
     version=VERSION,
@@ -41,8 +44,6 @@ setup(
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description_content_type='text/markdown',
-    long_description="""\
-    Integrated API platform documentation. This document covers all services provided by API Shop. For details on common response codes (like 401, 403, 500), please refer to our unified error code documentation.
-    """,  # noqa: E501
+    long_description=long_description,
     package_data={"justserpapi": ["py.typed"]},
 )
