@@ -1,6 +1,6 @@
 [project]
 name = "justserpapi"
-version = "1.0.3"
+dynamic = ["version"]
 description = "Professional Python SDK for JustSerpAPI"
 authors = [
   {name = "JustSerpAPI Team", email = "support@justserpapi.com"},
@@ -43,6 +43,9 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 include = ["justserpapi*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "justserpapi.__init__.__version__"}
 
 [tool.setuptools.package-data]
 justserpapi = ["py.typed"]

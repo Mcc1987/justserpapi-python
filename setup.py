@@ -4,7 +4,15 @@ import os
 from setuptools import setup, find_packages  # noqa: F401
 
 NAME = "justserpapi"
-VERSION = "1.0.3"
+
+VERSION = "1.0.0"
+# Get the version from __init__.py
+with open(os.path.join(os.path.dirname(__file__), 'justserpapi', '__init__.py')) as f:
+    for line in f:
+        if line.startswith('__version__ ='):
+            VERSION = line.split('=')[1].strip().strip('"').strip("'")
+            break
+
 PYTHON_REQUIRES = ">= 3.9"
 REQUIRES = [
     "urllib3 >= 2.1.0, < 3.0.0",

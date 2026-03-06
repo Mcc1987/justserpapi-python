@@ -16,6 +16,7 @@ import logging
 from logging import FileHandler
 import multiprocessing
 import sys
+from justserpapi import __version__
 from typing import Any, ClassVar, Dict, List, Literal, Optional, TypedDict, Union
 from typing_extensions import NotRequired, Self
 
@@ -554,8 +555,8 @@ conf = justserpapi.Configuration(
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: v1.0.0\n"\
-               "SDK Package Version: 1.0.3".\
-               format(env=sys.platform, pyversion=sys.version)
+               "SDK Package Version: {version}".\
+               format(env=sys.platform, pyversion=sys.version, version=__version__)
 
     def get_host_settings(self) -> List[HostSetting]:
         """Gets an array of host settings
