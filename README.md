@@ -29,7 +29,7 @@
 
 - **Official Website**: [justserpapi.com](https://justserpapi.com)
 - **API Documentation**: [docs.justserpapi.com](https://docs.justserpapi.com)
-- **User Dashboard**: [user.justserpapi.com](https://user.justserpapi.com)
+- **User Dashboard**: [dashboard.justserpapi.com](https://dashboard.justserpapi.com)
 - **Support**: [support@justserpapi.com](mailto:support@justserpapi.com)
 
 ---
@@ -58,7 +58,7 @@ pip install justserpapi
 
 ## 📖 Getting Started
 
-To start using the SDK, you need an **API Key**. You can get one from the [User Dashboard](https://user.justserpapi.com).
+To start using the SDK, you need an **API Key**. You can get one from the [User Dashboard](https://dashboard.justserpapi.com).
 
 ### Simple Search Example
 
