@@ -32,7 +32,7 @@ dependencies = [
 [project.urls]
 Homepage = "https://api.justserpapi.com"
 Documentation = "https://docs.justserpapi.com"
-Repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
+Repository = "https://github.com/justserpapi/justserpapi-python"
 
 [build-system]
 requires = ["setuptools>=61", "wheel"]

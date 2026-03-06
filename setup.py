@@ -4,7 +4,7 @@ import os
 from setuptools import setup, find_packages  # noqa: F401
 
 NAME = "justserpapi"
-VERSION = "1.0.0"
+VERSION = "1.0.3"
 PYTHON_REQUIRES = ">= 3.9"
 REQUIRES = [
     "urllib3 >= 2.1.0, < 3.0.0",
